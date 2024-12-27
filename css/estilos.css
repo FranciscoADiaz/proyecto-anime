@@ -1,8 +1,41 @@
+/* General */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --color-txt-1: #000000;
+  --color-txt-2: #564f4d;
+  --color-1: #00e1ff;
+  --color-2: #f9ff00;
+  --color-3: #ff4800;
+}
+
+.tex-titulo {
+  font-family: "Caveat Brush", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-txt-1);
+}
+
+.tex-parrafo {
+  font-family: "Roboto", sans-serif;
+   font-weight: 400;
+  font-style: small;
+  color: var(--color-txt-2);
+}
+
+.mt-main {
+  margin-top: 86px;
+}
+
+
+
+
+
+
 
 /* Navbar */
 
@@ -85,6 +118,54 @@
   margin: 0; 
 }
 
+
+/* Inicio Sesión */
+.icono {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.bg-inicio-sesion {
+  background-image: url(../img/login/fondo-inicio-sesion.webp);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Galería */
+.bg-galeria {
+   background-image: url(../img/galería/lufy3.jpg);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria {
+  img {
+    border: 3px solid var(--color-1);
+     transition: transform 0.6s ease;
+     height: 300px;
+     width: auto;
+     box-shadow: 5px 5px 15px 0 black;
+     object-fit: cover;
+  }
+  
+  img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 3px solid var(--color-2);
+  }
+}
+
+
+
+
+
+
+
+
 /* Contacto */
 
 .text-light-blue {
@@ -158,8 +239,17 @@
   color: white; 
 }
 
-@media (max-width: 767px) {
+
+/* MEDIA QUERYS */
+@media (max-width: 768px) {
   .form-section {
     margin-bottom: 30px; 
+  }
+
+
+  .galeria img { 
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
   }
 } 
