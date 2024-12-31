@@ -25,13 +25,6 @@
 .mt-main {
   margin-top: 86px;
 }
-
-
-
-
-
-
-
 /* Navbar */
 .navbar-logo {
   height: 60px;
@@ -49,132 +42,6 @@
 }
 .navbar-dark .nav-link.active {
   color: #FFF800 !important;  
-}
-.centrado-iniciar-sesion {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.iniciar-sesion-card {
-  max-width: 400px;
-  width: 100%;
-}
-/* Contenido página principal */
-body.pagina-index {
-  background-color: #000000;
-  color: #FFF800;
-}
-.no-background-categorias {
-  background-color: transparent;
-  color: white;
-}
-.titulo-entrada {
-  color: #FFF800;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.entrada-descripcion {
-  color: white;
-  font-size: 1rem;
-}
-.entrada .btn {
-  background-color: #00e1ff;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-}
-.card-entrada {
-  background-color: rgba(0, 0, 0, 0.7); 
-  border: none; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  text-align: center;
-}
-.card-img-container {
-  width: 100%;
-  height: 300px; 
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.card-entrada-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-.card-body-entrada {
-  background-color: rgba(0, 0, 0, 0.7); 
-  border-radius: 10px; 
-  padding: 20px;
-  width: 100%;
-}
-.card-title-entrada {
-  color: white;
-  font-size: 1.75rem; 
-  font-weight: bold;
-}
-.card-text-entrada {
-  color: white;
-  font-size: 1rem;
-}
-.card-entrada-pagina {
-  background-color: rgba(0, 0, 0, 0.7); 
-  border: none; 
-  border-radius: 10px; 
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-.card-pagina-img-top {
-  width: 100%; 
-  height: auto; 
-  display: block; 
-}
-.card-body-entrada-pagina {
-  padding: 20px; 
-}
-.card-title-entrada {
-  font-size: 2.5rem;
-  color: #00e1ff;
-  font-weight: bold;
-}
-.card-violet-text-entrada {
-  font-size: 1.5rem;
-}
-.zoom-hover {
-  transition: transform 0.3s ease;
-}
-.zoom-hover:hover {
-  transform: scale(1.1); 
-}
-.pagination .page-link {
-  color: #00e1ff;
-  background-color: transparent; 
-  border: none; 
-}
-.pagination .page-link:hover {
-  color: #FFF800;
-  background-color: transparent; 
-}
-.pagination .active .page-link {
-  color: #FFF800;
-  background-color: transparent; 
-}
-.pagination .disabled .page-link {
-  color: gray; 
-  background-color: transparent; 
-}
-.no-background-categorias a {
-  background-color: transparent; 
-  color: white; 
-  border: none; 
-  text-decoration: none; 
-}
-.no-background-categorias a:hover {
-  color: #00e1ff;
 }
 /* Acerca de Nosotros */
 .body-background {
@@ -221,12 +88,46 @@ body.pagina-index {
   font-size: 1.2rem; 
   margin: 0; 
 }
-/* contacto */
+/* Inicio Sesión */
+.icono {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.bg-inicio-sesion {
+  background-image: url(../img/login/fondo-inicio-sesion.webp);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Galería */
+.bg-galeria {
+   background-image: url(../img/galería/lufy3.jpg);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.galeria {
+  img {
+    border: 3px solid var(--color-1);
+     transition: transform 0.6s ease;
+     height: 300px;
+     width: auto;
+     box-shadow: 5px 5px 15px 0 black;
+     object-fit: cover;
+  }  
+  img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 3px solid var(--color-2);
+  }
+}
+/* Contacto */
 .text-light-blue {
   color: #00E1FF; 
 }
 .text-light-blue:hover {
-  color: #ff4800; 
+  color: #5bc0eb; 
   transition: color 0.3s ease; 
 }
 .contacto-background {
@@ -248,48 +149,6 @@ body.pagina-index {
   backdrop-filter: blur(5px); 
   padding: 15px; 
 }
-
-
-/* Inicio Sesión */
-.icono {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-.bg-inicio-sesion {
-  background-image: url(../img/login/fondo-inicio-sesion.webp);
-   background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-/* Galería */
-.bg-galeria {
-   background-image: url(../img/galería/lufy3.jpg);
-   background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.galeria {
-  img {
-    border: 3px solid var(--color-1);
-     transition: transform 0.6s ease;
-     height: 300px;
-     width: auto;
-     box-shadow: 5px 5px 15px 0 black;
-     object-fit: cover;
-  }
-  
-  img:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    border: 3px solid var(--color-2);
-  }
-}
-
 /* Footer */
 .footer {
   background-color: #000 !important; 
@@ -361,4 +220,4 @@ body.pagina-index {
     height: auto;
     margin: 10px auto;
   }
-} 
+}
