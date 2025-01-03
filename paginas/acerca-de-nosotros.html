@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
-          <img src="../img/logo.png" alt="logo" style="height: 60px;">
+          <img src="../img/logo.png" alt="logo" class="navbar-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,21 +29,18 @@
               <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../paginas/acerca-de-nosotros.html">Acerca de Nosotros</a>
+              <a class="nav-link active" href="../páginas/acerca-de-nosotros.html">Acerca de Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../paginas/error-404.html">Galería</a>
+              <a class="nav-link" href="../paginas/galeria.html">Galería</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../paginas/error-404.html">Blog</a>
-            </li>
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">Iniciar Sesión</a>
+              <a class="nav-link" href="../paginas/iniciar-sesion.html">Iniciar Sesión</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Suscribirse</a>
@@ -52,34 +49,35 @@
         </div>
       </div>
     </nav>
-    <!-- Modal Registrarse -->
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel2">Suscribirse</h5>
+        <div class="modal-content text-muted"> 
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="exampleModalLabel2">Mantente actualizado</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required minlength="5" maxlength="50">        
+                <label for="exampleInputEmail1" class="form-label">Nombre de usuario</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp" minlength="5" maxlength="50">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Usuario y/o Email</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required minlength="5" maxlength="50">        
+                <label for="exampleInputEmail1" class="form-label">Correo</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required minlength="5" maxlength="50">
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" required minlength="8" maxlength="50">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" required>
               </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Repetir Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" required minlength="8" maxlength="50">
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Acepto los términos y condiciones
+                </label>
               </div>
               <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">Suscribirme</button>
               </div>
             </form>
           </div>
@@ -89,33 +87,26 @@
   </header>
   <main class="body-background">
     <div class="container py-5">
-      <!-- Primera Fila -->
       <div class="row">
         <div class="col-12 text-center p-5">
-          <!-- <img class="titulo-imagen img-fluid" src="../img/nosotros.png" alt="Titulo Acerca de Nosotros"> -->
         </div>
       </div>
-      <!-- Segunda Fila con 4 imágenes -->
-      <div class="row">        
-        <!-- Mati -->
+      <div class="row">
         <div class="col-12 col-md-6 col-lg-3 mb-4">
           <div class="card-nosotros">
             <img src="../img/mati-avatar.png" class="card-img-top" alt="Avatar Matías">
           </div>
-        </div>        
-        <!-- Caro -->
+        </div>
         <div class="col-12 col-md-6 col-lg-3 mb-4">
           <div class="card-nosotros">
             <img src="../img/caro-avatar.png" class="card-img-top" alt="Avatar Carolina">
           </div>
-        </div>        
-        <!-- Leandro -->
+        </div>
         <div class="col-12 col-md-6 col-lg-3 mb-4">
           <div class="card-nosotros">
             <img src="../img/leandro-avatar.png" class="card-img-top" alt="Avatar Leandro">
           </div>
-        </div>        
-        <!-- Francisco -->
+        </div>
         <div class="col-12 col-md-6 col-lg-3 mb-4">
           <div class="card-nosotros">
             <img src="../img/francisco-avatar.png" class="card-img-top" alt="Avatar Francisco">
@@ -129,15 +120,12 @@
   </main>
   <footer class="footer">
     <div class="container-fluid">
-      <div class="row bg-dark py-4"> <!-- Aseguramos que la fila tenga el fondo negro -->
-        <!-- Primera Columna: Logo de la Empresa -->
+      <div class="row bg-dark py-4">
         <div class="col-12 col-md-4 text-center text-md-start mb-1">
           <a href="../index.html"><img src="../img/logo.png" alt="Logo de la empresa" class="img-fluid logo" style="max-width: 170px;"></a>
         </div>
-        <!-- Segunda Columna: Redes Sociales y Enlaces -->
         <div class="col-12 col-md-4 text-center mb-1">
           <div class="mb-3">
-            <!-- Logos de Redes Sociales -->
             <div class="d-flex justify-content-center">
               <a href="https://www.instagram.com/" class="text-white me-3">
                 <i class="bi bi-instagram footer-link" style="font-size: 1.5rem;"></i>
@@ -153,13 +141,11 @@
               </a>
             </div>
           </div>
-          <!-- Enlaces -->
           <ul class="list-unstyled">
             <li><a href="#" class="footer-link">Términos y Condiciones</a></li>
             <li><a href="#" class="footer-link">Legales</a></li>
           </ul>
         </div>
-        <!-- Tercera Columna: Información de la Empresa -->
         <div class="col-12 col-md-4 text-center text-md-end mb-1">
           <p class="mb-1">Dirección: Calle Falsa 123</p>
           <p class="mb-1">Teléfono: +54 123 456 789</p>
@@ -167,15 +153,10 @@
         </div>
       </div>
     </div>
-    <!-- Segunda Fila: Copyright -->
     <div class="footer-copy bg-secondary text-center py-3">
       <p class="mb-0">&copy; 2024 | Blog Anime. Todos los derechos reservados.</p>
     </div>
   </footer>
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
