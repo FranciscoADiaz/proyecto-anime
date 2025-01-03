@@ -20,8 +20,8 @@ Este sitio web está diseñado para fanáticos del anime, permitiendo explorar u
 - **Recomendaciones**: Se proporcionan recomendaciones basadas en los animes que el usuario ha consultado.
 - **Interfaz responsiva**: Diseño que se adapta a diferentes tamaños de pantalla, incluyendo móviles y tablets.
 
-##Licencia
+## Licencia
 - Este proyecto está bajo licencia MIT.
 
-##Autores
+## Autores
 -Diaz Francisco, Carolina, Matias.
